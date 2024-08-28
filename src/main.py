@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from crewai import Crew
 from tasks import MeetingPrepTasks
-from agents import MeetingPrepAgent
+from agents import MeetingPrepAgents
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
     meeting_objective = input("What is the objective for the meeting?\n")
 
     tasks = MeetingPrepTasks()
-    agents = MeetingPrepAgent()
+    agents = MeetingPrepAgents()
 
     # Create agents
     research_agent = agents.research_agent()
@@ -47,6 +47,8 @@ def main():
     )
 
     result = crew.kickoff()
+
+    print(result)
 
 
 if __name__ == "__main__":
