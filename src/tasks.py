@@ -12,7 +12,7 @@ class MeetingPrepTasks():
 
                 Participants: {meeting_participants}
                 Meeting Context: {meeting_context}"""),
-            excepted_output=dedent("""\
+            expected_output=dedent("""\
                 A detailed report summarizing key findings about each participant
                 and company, highlighting information that could be relevant for the meeting."""),
             agent=agent,
