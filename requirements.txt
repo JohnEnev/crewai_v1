@@ -1,0 +1,4 @@
+crewai==0.51.1
+exa_py==1.0.18
+langchain==0.2.15
+python-dotenv==1.0.1
